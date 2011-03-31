@@ -3,9 +3,9 @@ from twisted.internet import protocol
 from twisted.internet import reactor
 import sys
 
-from modules.sitscrape.handler import MiddagHandler
+from modules.middag.handler import MiddagHandler
 from modules.define.handler import DefineHandler
-from modules.memescrape.handler import MemeHandler
+from modules.meme.handler import MemeHandler
 from modules.vgnews.handler import NewsHandler
 
 class Bot(irc.IRCClient):
