@@ -1,9 +1,0 @@
-[submodule "modules/sitscrape"]
-	path = modules/middag
-	url = git@github.com:petterw/sitscrape.git
-[submodule "modules/memescrape"]
-	path = modules/meme
-	url = https://github.com/kvalle/memescrape.git
-[submodule "modules/define"]
-	path = modules/define
-	url = https://github.com/emagnus/definitionscrape.git
