@@ -1,0 +1,9 @@
+[submodule "modules/define"]
+	path = modules/define
+	url = https://github.com/emagnus/definitionscrape.git
+[submodule "modules/meme"]
+	path = modules/meme
+	url = https://github.com/kvalle/memescrape.git
+[submodule "modules/middag"]
+	path = modules/middag
+	url = https://github.com/petterw/sitscrape.git
