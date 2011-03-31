@@ -35,7 +35,7 @@ class Bot(irc.IRCClient):
 
 class BotFactory(protocol.ClientFactory):
     protocol = Bot
-    def __init__(self, channel, nickname='habeebs'):
+    def __init__(self, channel, nickname='melvin'):
         self.channel = channel
         self.nickname = nickname
         
