@@ -20,7 +20,13 @@ def mangle(string):
 	""" Hacky fix for Twisted unicode issues and general charset conversion problems.
 		ugh
 	"""
-	return reduce(lambda x,y: x+y, map(unicode, string))
+	return reduce(lambda x,y: x+y, map(ut, string))
+
+def ut(string):
+	try:
+		return unicode(string)
+	except:
+		return string
 
 def extract_menu(doc):
 	""" Input: html from sit.no with a menu table, output: menu as list
@@ -49,12 +55,12 @@ def todays_menu(urls):
 	r = []
 	for title in urls.keys():
 		r.append(title)
-		#try:
-		lines =  extract_menu(fetch(urls[title]))[today]
-		for x in xrange(len(lines)):
-			r.append(str(x+1)+". " + lines[x][0] + ", "+lines[x][1])
-		#except:
-		r.append("Feil under henting av meny :(")
+		try:
+			lines =  extract_menu(fetch(urls[title]))[today]
+			for x in xrange(len(lines)):
+				r.append(str(x+1)+". " + lines[x][0] + ", "+lines[x][1])
+		except:
+			r.append("Feil under henting av meny :(")
 	print ".. ferdig"
 	return r
 
