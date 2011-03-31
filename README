@@ -1,3 +1,4 @@
-This bot echoes the dinner in the NTNU cafeteria into an irc channel.
+This bot combines various other web scraping bots into one codebase.
 
-Bot code ripped from github.com/emagnus :)
+IRC code from from github.com/emagnus, sit dinner code from /petterw, 
+news code from /snorrec, and meme code from /kvalle.
