@@ -6,7 +6,7 @@ import sys
 from modules.middag.handler import MiddagHandler
 from modules.define.handler import DefineHandler
 from modules.meme.handler import MemeHandler
-from modules.vgnews.handler import NewsHandler
+#from modules.vgnews.handler import NewsHandler
 
 class Bot(irc.IRCClient):
 	def _get_nickname(self):
