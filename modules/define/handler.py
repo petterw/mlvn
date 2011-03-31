@@ -1,4 +1,4 @@
-# from github.com/emagnus
+# author: github.com/emagnus
 from BeautifulSoup import BeautifulStoneSoup
 from BeautifulSoup import NavigableString
 from BeautifulSoup import BeautifulSoup

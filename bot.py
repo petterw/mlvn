@@ -4,12 +4,18 @@ from twisted.internet import reactor
 import sys
 
 from modules.middag.handler import MiddagHandler
+from modules.define.handler import DefineHandler
+from modules.meme.handler import MemeHandler
+from modules.vgnews.handler import NewsHandler
 
 class Bot(irc.IRCClient):
 	def _get_nickname(self):
 		return self.factory.nickname
 	nickname = property(_get_nickname)
-	handlers = {"!middag": MiddagHandler()}
+	handlers = {"!middag": MiddagHandler(),
+				"!define": DefineHandler(),
+				"!meme": MemeHandler()
+				}
 	
 	def signedOn(self):
 		self.join(self.factory.channel)

@@ -1,3 +1,4 @@
+# author: github.com/petterw
 from BeautifulSoup import BeautifulSoup
 from datetime import datetime
 import urllib2

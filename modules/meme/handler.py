@@ -1,3 +1,4 @@
+# author: github.com/kvalle
 from BeautifulSoup import BeautifulSoup
 from BeautifulSoup import BeautifulStoneSoup
 from datetime import datetime
