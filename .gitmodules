@@ -1,3 +1,6 @@
 [submodule "modules/sitscrape"]
 	path = modules/sitscrape
 	url = git@github.com:petterw/sitscrape.git
+[submodule "modules/memescrape"]
+	path = modules/memescrape
+	url = https://github.com/kvalle/memescrape.git
