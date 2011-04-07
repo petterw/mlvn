@@ -17,7 +17,7 @@ class Bot(irc.IRCClient):
         "!middag": MiddagHandler(),
         "!define": DefineHandler(),
         "!meme": MemeHandler(),
-	"!coinflip": ConinflipHandler()
+        "!coinflip": CoinflipHandler()
         }
 
     def signedOn(self):
