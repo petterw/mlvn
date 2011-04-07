@@ -6,6 +6,7 @@ import sys
 from modules.middag.handler import MiddagHandler
 from modules.define.handler import DefineHandler
 from modules.meme.handler import MemeHandler
+from modules.coinflip.handler import CoinflipHandler
 #from modules.vgnews.handler import NewsHandler
 
 class Bot(irc.IRCClient):
@@ -15,7 +16,8 @@ class Bot(irc.IRCClient):
     handlers = {
         "!middag": MiddagHandler(),
         "!define": DefineHandler(),
-        "!meme": MemeHandler()
+        "!meme": MemeHandler(),
+	"!coinflip": ConinflipHandler()
         }
 
     def signedOn(self):
