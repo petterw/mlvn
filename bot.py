@@ -28,12 +28,16 @@ class Bot(irc.IRCClient):
         print "Joined %s." % (channel,)
 
     def privmsg(self, user, channel, msg):
+		print "DEBUG: "+channel+" "+user+" "+msg
         if not user:
             return
         for keyword in self.handlers.keys():
             if keyword in msg:
                 for line in self.handlers[keyword].privmsg(user, channel, msg):
-                    self.msg(self.factory.channel, line.encode("utf-8", "ignore"))
+					try:
+						self.msg(self.factory.channel, line.encode("utf-8", "ignore"))
+					except:
+						self.msg(self.factory.channel, " ")
 
 
 class BotFactory(protocol.ClientFactory):
