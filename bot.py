@@ -55,7 +55,7 @@ if __name__ == "__main__":
         chan = sys.argv[2]
         server = sys.argv[3]
         port = sys.argv[4]
-        reactor.connectTCP(server, int(port), BotFactory("#"+chan, nick))
+        reactor.connectTCP(server, int(port), BotFactory("#"+chan, nick, lineRate=1))
         reactor.run()
     except:
         print "Usage:"
